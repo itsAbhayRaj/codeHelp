@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int findCost(string str){
+    stack<char> s;
+    if(str.length()%2==1)return -1;
+    for(char ch: str){
+        if(ch=='{'){
+            s.push(ch);
+        }else if(!s.empty() && s.top()=='{'){
+            s.pop();
+        }else{
+            s.push(ch);
+        }
+    }
+    int ans = 0;
+    int a=0,b=0;
+    while(!s.empty()){
+        if(s.top()=='{'){
+            a++;
+        }else{
+            b++;
+        }
+        s.pop();
+    }
+    ans = (a+1)/2 + (b+1)/2;
+    return ans;
+}
+int main()
+{
+    string str = "}}}{{{";
+    int cost = findCost(str);
+    cout << cost << endl;
+}
+// {{{}
+// {{}{}}
+// {}}{}}
+// {{{{
+// {{{}}
