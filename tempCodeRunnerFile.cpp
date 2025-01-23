@@ -8,7 +8,7 @@ int main(){
                 if(i==0||i==n-1||j==0||j==i){
                     cout<<j+1<<"";}
                     else{
-                        cout<<" ";
+                        cout<<" tdf";
                     }
         }
         cout<<endl;

@@ -17,4 +17,5 @@ int main()
 {
   vector<int> arr1 = {5,6,7,7,8,1,2,3};
   cout<<check(arr1);
+  cout<<"io";
 }
