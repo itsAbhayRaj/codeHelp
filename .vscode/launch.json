@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "a:/Code_Help/queue",
-      "program": "a:/Code_Help/queue/build/Debug/outDebug",
+      "cwd": "a:/Code_Help/binaryTree",
+      "program": "a:/Code_Help/binaryTree/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
