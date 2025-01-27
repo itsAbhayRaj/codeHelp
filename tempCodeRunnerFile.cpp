@@ -2,25 +2,12 @@
 using namespace std;
 
 int main(){
-    int n=5;
-    for(int i=0;i<n;i++){
-        for(int j=0;j<i+1;j++){
-                if(i==0||i==n-1||j==0||j==i){
-                    cout<<j+1<<"";}
-                    else{
-                        cout<<" tdf";
-                    }
-        }
-        cout<<endl;
-    }
-    // for(int i=0;i<n;i++){
-    //     for(int j=0;j<(2*(n-i)-1);j++){
-    //         if(j%2){
-    //             cout<<"* ";
-    //         }else{
-    //             cout<<n-i<<" ";
-    //         }
-    //     }
-    //     cout<<endl;
-    // }
+    char ch = '1';
+    char arr[10] = {'0','1','2','3','4','5','6','7','8','9'};
+    arr[8]  = (arr[1]-'0')+(arr[2]-'0')+'0';
+    // arr[8] = num + '0';
+    arr[1] = 0 + '0';
+    cout<<arr[1]<<endl;
+    // cout<<num;
+    return 0;
 }

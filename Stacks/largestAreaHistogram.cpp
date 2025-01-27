@@ -26,7 +26,7 @@ using namespace std;
 //     }
 //     return area;
 // }
-
+void print(vector<int> &arr);
 vector<int> nextSmallerElement(vector<int> &arr)
 {
     stack<int> st;
@@ -64,8 +64,11 @@ int largestRectangleArea(vector<int> &heights)
     int n = heights.size();
     vector<int> next(n);
     vector<int> prev(n);
+    
     next = nextSmallerElement(heights);
     prev = prevSmallerElement(heights);
+    print(next);
+    print(prev);
     int area = INT_MIN;
     for (int i = 0; i < n; i++)
     {
@@ -81,10 +84,17 @@ int largestRectangleArea(vector<int> &heights)
     }
     return area;
 }
-
+void print(vector<int> &vec)
+{
+    for (int i = 0; i < vec.size(); i++)
+    {
+        cout << vec[i] << " ";
+    }
+    cout << endl;
+}
 int main()
 {
-    vector<int> heights = { 2,1,5,6,2,3 };
+    vector<int> heights = { 0,1,1,0 };
     int area = largestRectangleArea(heights);
     cout << area << endl;
 }
