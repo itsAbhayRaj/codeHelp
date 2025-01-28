@@ -2,7 +2,7 @@
 using namespace std;
 class Solution
 {
-    void solve(Node *root, int len, int &maxLen, int &sum, int &maxSum)
+    void solve(Node *root, int len, int &maxLen, int sum, int &maxSum)
     {
         if (root == NULL){
            
