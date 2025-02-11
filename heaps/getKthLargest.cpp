@@ -28,3 +28,5 @@ int getKthLargest(vector<int> &arr, int k)
     return pq.top();
 }
 // there is brute force for storing all subarrays
+// in O(N^2) space
+// but priority queue takes only O(k) space
