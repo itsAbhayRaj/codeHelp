@@ -35,7 +35,7 @@ vector<string> subsequence(string str){
 
 int main()
 {
-   string str = "cba";
+   string str = "AAB";
    vector<string> arr = subsequence(str);
    print(arr);
 }
